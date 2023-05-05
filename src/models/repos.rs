@@ -319,7 +319,7 @@ pub struct Asset {
     pub download_count: i64,
     pub created_at: DateTime<Utc>,
     pub updated_at: DateTime<Utc>,
-    pub uploader: CommitAuthor,
+    pub uploader: Option<CommitAuthor>,
 }
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
